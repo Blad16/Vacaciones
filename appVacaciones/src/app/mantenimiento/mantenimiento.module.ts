@@ -7,6 +7,9 @@ import { CargoComponent } from './cargo/cargo.component';
 import { CodigoTrabajoComponent } from './codigo-trabajo/codigo-trabajo.component';
 import { VacacionesComponent } from './vacaciones/vacaciones.component';
 
+//importaciones//
+import { NzTableModule } from 'ng-zorro-antd/table';
+
 
 @NgModule({
   declarations: [
@@ -17,7 +20,8 @@ import { VacacionesComponent } from './vacaciones/vacaciones.component';
   ],
   imports: [
     CommonModule,
-    MantenimientoRoutingModule
+    MantenimientoRoutingModule,
+    NzTableModule
   ]
 })
 export class MantenimientoModule { }
