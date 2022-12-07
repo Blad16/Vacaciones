@@ -17,10 +17,22 @@
             <div *ngIf="data.disponible"><i nzicon nzType="checksquare" nzTheme="outline"></i> </div>
             </td>
             <a><i nz-icon nzType="edit" nzTheme="twotone" ></i></a>
-            <a><i nz-icon nzType="delete" nzTheme="outline" ></i></a>
+            <a nz-popconfirm nzPopconfirmTitle="estas seguro de borrar el registro" nzPopconfirmPlacement="bottom" (nzOnConfirm)="eliminar (data.id)" nz OnCancel="cancelar()" nzShape="circle"nz CancelText="no"nzOkTest="si"><i nz-icon nzType="delete" nzTheme="outline" ></i></a>
             <nz-divider nzType="vertical"></nz-divider>
 
       </tr>
     </tbody>
   </nz-table>
+  <nz-modal [(nzVisible)]="isVisible" nzTitle="Administracion emepleado" >
+    <ng-container *nzModalContent>
+      <p>Content one</p>
+      <p>Content two</p>
+      <p>Content three</p>
+ </ng-container>
+ <div nz ModalFooter> 
+    <button nz-Buttom nzType="defualt"(click)="hadlecancel()">cancelar</button>
+    <button nz-Buttom nzType="primary"(click)="guardar()">guardar</button>
+
+ </div>
+  </nz-modal>
  

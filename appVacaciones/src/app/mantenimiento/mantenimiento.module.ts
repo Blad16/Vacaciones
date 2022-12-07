@@ -13,6 +13,7 @@ import { NzDividerModule } from 'ng-zorro-antd/divider';
 import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzPopconfirmModule } from 'ng-zorro-antd/popconfirm';
 import { NzMessageModule } from 'ng-zorro-antd/message';
+import { NzModalModule } from 'ng-zorro-antd/modal';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { NzMessageModule } from 'ng-zorro-antd/message';
     NzDividerModule,
     NzIconModule,
     NzPopconfirmModule,
-    NzMessageModule
+    NzMessageModule,
+    NzModalModule
   ]
 })
 export class MantenimientoModule { }
