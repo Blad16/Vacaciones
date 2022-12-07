@@ -1,1 +1,26 @@
-<p>empleado works!</p>
+<nz-table #basicTable [nzData]="dataSet">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Fecha de ingreso</th>
+        <th>cargo</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of basicTable.data"; let i=index>
+        <td>{{i+1}}</td>
+        <td>{{data.nombre}}</td>
+        <td>{{data.fecha de ingreso}}</td>
+        <td>{{data.cargoId}}</td>
+        <td>
+            <div *ngIf="data.disponible"><i nzicon nzType="checksquare" nzTheme="outline"></i> </div>
+            </td>
+            <a><i nz-icon nzType="edit" nzTheme="twotone" ></i></a>
+            <a><i nz-icon nzType="delete" nzTheme="outline" ></i></a>
+            <nz-divider nzType="vertical"></nz-divider>
+
+      </tr>
+    </tbody>
+  </nz-table>
+ 

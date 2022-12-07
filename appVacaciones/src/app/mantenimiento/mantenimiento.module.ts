@@ -9,6 +9,8 @@ import { VacacionesComponent } from './vacaciones/vacaciones.component';
 
 //importaciones//
 import { NzTableModule } from 'ng-zorro-antd/table';
+import { NzDividerModule } from 'ng-zorro-antd/divider';
+import { NzIconModule } from 'ng-zorro-antd/icon';
 
 
 @NgModule({
@@ -21,7 +23,9 @@ import { NzTableModule } from 'ng-zorro-antd/table';
   imports: [
     CommonModule,
     MantenimientoRoutingModule,
-    NzTableModule
+    NzTableModule,
+    NzDividerModule,
+    NzIconModule
   ]
 })
 export class MantenimientoModule { }
