@@ -11,6 +11,7 @@ import { VacacionesComponent } from './vacaciones/vacaciones.component';
 import { NzTableModule } from 'ng-zorro-antd/table';
 import { NzDividerModule } from 'ng-zorro-antd/divider';
 import { NzIconModule } from 'ng-zorro-antd/icon';
+import { NzPopconfirmModule } from 'ng-zorro-antd/popconfirm';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { NzIconModule } from 'ng-zorro-antd/icon';
     MantenimientoRoutingModule,
     NzTableModule,
     NzDividerModule,
-    NzIconModule
+    NzIconModule,
+    NzPopconfirmModule
   ]
 })
 export class MantenimientoModule { }
