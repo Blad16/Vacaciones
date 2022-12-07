@@ -25,10 +25,19 @@
           </li>
         </ul>
       </li>
-      <li nz-submenu nzOpen nzTitle="Form" nzIcon="form">
+      <li nz-submenu nzOpen nzTitle="mantenimientos" nzIcon="form">
         <ul>
           <li nz-menu-item nzMatchRouter>
-            <a>Basic Form</a>
+            <a RouterLink = "mantenimientos/cargo">Cargos</a>
+          </li>
+          <li nz-menu-item nzMatchRouter>
+            <a RouterLink = "/mantenimientos/empleado">Empleados</a>
+          </li>
+          <li nz-menu-item nzMatchRouter>
+            <a RouterLink = "mantenimientos/vacaciones">Vacaciones</a>
+          </li>
+          <li nz-menu-item nzMatchRouter>
+            <a RouterLink = "mantenimientos/codigo-trabajo">CodigodeTrabajo</a>
           </li>
         </ul>
       </li>
